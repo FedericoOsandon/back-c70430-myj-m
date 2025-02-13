@@ -1,0 +1,30 @@
+GET http://localhost:8080/api/products
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+    "title": "product 1",
+    "code": "001",
+    "category": "category",
+    "price": 1500
+}
+###___________________________ Sessions _____________________________
+POST http://localhost:8080/api/sessions/register
+Content-Type: application/json
+
+{
+    "first_name": "Fede",
+    "last_name": "Osandón",
+    "email": "f@gmail.com",
+    "password": "123456"
+}
+###
+POST http://localhost:8080/api/sessions/login
+Content-Type: application/json
+
+{
+    "email": "f@gmail.com",
+    "password": "12345"
+}
