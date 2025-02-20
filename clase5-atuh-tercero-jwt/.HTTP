@@ -1,0 +1,35 @@
+GET http://localhost:8080/api/products
+
+###
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+    "title": "product 1",
+    "code": "001",
+    "category": "category",
+    "price": 1500
+}
+###___________________________ Sessions _____________________________
+POST http://localhost:8080/api/sessions/register
+Content-Type: application/json
+
+{
+    "first_name": "Fede",
+    "last_name": "Osandón",
+    "email": "f@gmail.com",
+    "password": "123456"
+}
+###
+POST http://localhost:8080/api/sessions/login
+Content-Type: application/json
+
+{
+    "email": "f@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:8080/api/sessions/current
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjQ5YzM3NGI1ZTgzODVkMzk3YjgwZCIsImVtYWlsIjoiZkBnbWFpbC5jb20iLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDAwNjIxMTcsImV4cCI6MTc0MDE0ODUxN30.B8ezZaDwwpVW0E6eUm5MHGBIID2ycPwRTVOviWvMPM0
+
