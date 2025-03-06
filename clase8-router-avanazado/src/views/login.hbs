@@ -1,0 +1,39 @@
+<main>
+    <div class="d-flex col justify-content-center align-items-center">
+        <h1>Login</h1>
+        <form action="/api/sessions/login" method="POST" class="form-group w-50">
+            <input type="text" name="email" class="form-control" placeholder="ingrese el email">
+            <input type="text" name="password" class="form-control" placeholder="ingrese el pass">
+            <button>Enviar</button>
+            <a href="/register">Register</a>
+        </form>
+        <div>
+            <a href="/api/sessions/github">Registro con github</a>
+            
+        </div>
+    </div>
+</main>
+
+<script>
+    //let formData= {}
+    //fetch('/api/sessions/login', {
+    //    method: 'POST',
+    //    headers: {
+    //        "Content-Type": "application/json"
+    //    },
+    //    body: JSON.stringify(formData)
+    //})
+    //.then(res => res.json()) 
+    //.then(({token}) => localStorage.setItem('authToken', token)) // {status, token}
+    //// en caso de consultar info con rutas protegidas
+    //fetch('/api/users', {
+    //    
+    //    headers: {
+    //        "Content-Type": "application/json",
+    //        "athorization":`Bearer ${sessionStorage.getItem('authToken')}`
+    //    },
+    //   
+    //})
+    //.then(res => res.json()) 
+    //.then(({token}) => localStorage.setItem('authToken', token))
+</script>
